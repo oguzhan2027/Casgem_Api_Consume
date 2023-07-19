@@ -1,0 +1,16 @@
+﻿@model Casgem_Api_Consume.Dtos.CategoryDtos.UpdateCategoryDto
+@{
+    ViewData["Title"] = "UpdateCategory";
+    //Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>AddCategory</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="CategoryID" />
+    <label>kategori adı</label>
+    <input type="text" class="form-control border" style="color:black" asp-for="CategoryName" />
+    <br />
+    <button class="btn btn-primary">kaydet</button>
+</form>
+
